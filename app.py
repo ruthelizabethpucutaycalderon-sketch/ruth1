@@ -1,7 +1,7 @@
 import streamlit as st
 import json
 import os
-st.RUTH_PUCUTAY_CALDERÓN()
+
 # Cargar preguntas desde JSON
 with open("questions.json", "r", encoding="utf-8") as f:
     preguntas = json.load(f)

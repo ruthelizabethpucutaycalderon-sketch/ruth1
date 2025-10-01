@@ -3,8 +3,9 @@ import json
 import os
 
 # Cargar preguntas desde JSON
-with open("questions.json", "r", encoding="utf-8") as f:
+with open("questions.json", encoding="utf-8") as f:
     preguntas = json.load(f)
+    
 # Obtener query param ?q=1
 query_params = st.experimental_get_query_params()
 pagina = int(query_params.get("q", [1])[0])
